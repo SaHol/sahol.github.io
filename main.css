@@ -17,3 +17,9 @@ body {
     /*letter-spacing: 3px;*/
     text-shadow: 0 1px 0 #eee;
 }
+
+a {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
