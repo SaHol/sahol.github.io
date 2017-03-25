@@ -1,34 +1,67 @@
+body,ul,section,header, nav, h1, li {
+	display: block;
+	margin: 0;
+	padding: 0;	
+}
 body {
-    background: #ccc;
-    font-family: "PT Sons", Arial;
-    font-size: 18px;
-    font-weight: bold;
+	background: #f6f5de;
+	color: #100;
+	font: 100%/1.4 Helvetica, Arial, sans-serif;	
 }
-
-.con {
-    font-size: 1.3em;
-    font-style: italic;
-    text-decoration:underline;
-    text-transform:capitalize;
-    text-align: justify;
-    text-indent: 20px;
-    line-height: 1em;
-    /*word-spacing: 50px;*/
-    /*letter-spacing: 3px;*/
-    text-shadow: 0 1px 0 #eee;
+header {
+	text-align: center;
+	background: #100;
+	color: #dedcb9;
+	padding: 0.5em 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
 }
-
+footer {
+	text-align: center;
+	background: #100;
+	color: #dedcb9;
+	padding: 0.5em 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+section {
+	padding: 3.3em 0;	
+}
+h1 {
+	font-size: 1.6em;
+}
+ul {
+	border-top: 1px dashed #cdcaa2;
+}
+li {
+	padding: 0.5em 1em;
+	border-bottom: 1px dashed #cdcaa2;
+}
+p {
+	padding: 0.5em 1em;
+}
 a {
-    position: fixed;
-    right: 20px;
-    top: 20px;
+	text-decoration: none;
+	color: #be6700;
+}
+a:visited {
+	color: #03015c;	
+}
+nav a {
+	display: block;
 }
 
-.head1 {
-    position: fixed;
-    text-align: center;
-    display: block;
-    height: 50px;
-    width: 100%;
-    background: yellow;    
+/*Scrollable Regions Pages*/
+.scrollable header {
+	position: static;	
+}
+.scrollable section {
+	padding-top: 0;
+	height: 364px;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;	
 }
