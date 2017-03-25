@@ -24,7 +24,7 @@ a {
     top: 20px;
 }
 
-header {
+.head1 {
     position: fixed;
     text-align: center;
     display: block;
