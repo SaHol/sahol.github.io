@@ -1,9 +1,10 @@
 /*Треугольник с выноской*/
 .container {
 	width: 150px; height: 80px;
-	background: green; margin: 10px;
+	background: green; 
+    margin: 3.5em auto 0;    
 	
-	border-radius: 5px;
+	border-radius: 10px;
 	position: relative;
 }
 
