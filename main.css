@@ -1,14 +1,14 @@
 body {
-    background:url(http://subtlepatterns.com/patterns/subtlenet2.png);
-    font:1em 'PT Sans', Tahoma, Arial;
+    background: white;
     text-transform:uppercase;
+    font:1em 'PT Sans', Tahoma, Arial;
+    color: red;
 }
 
 /********** Main menu**********/
 
 .nav {
     list-style:none;
-    margin:30px;
     opacity:.5;
     padding:0;
     width:50px;
@@ -17,6 +17,7 @@ body {
     -webkit-transition:opacity .3s ease-in-out;
     -o-transition:opacity .3s ease-in-out;
     transition:opacity .3s ease-in-out;
+    margin: 50px;
 }
 
 .nav:hover {
