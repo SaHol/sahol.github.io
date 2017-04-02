@@ -1,17 +1,17 @@
 body {
     background: white;
     text-transform:uppercase;
-    font:1em 'PT Sans', Tahoma, Arial;
+    font: 1em 'PT Sans', Tahoma, Arial;
     color: red;
 }
 
-/********** Main menu**********/
+/******* Main menu *********/
 
 .nav {
     list-style:none;
     opacity:.5;
     padding:0;
-    width:50px;
+    width: 50px;
     
     -moz-transition:opacity .3s ease-in-out;
     -webkit-transition:opacity .3s ease-in-out;
@@ -25,10 +25,10 @@ body {
 }
 
 .nav li {
-    height:50px;
+    height: 50px;
     overflow:hidden;
-    width:50px;
-    
+    width: 50px;
+
     -moz-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
     -webkit-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
     -o-transition:width .2s ease-in-out, height .2s ease-in-out .2s;
@@ -36,8 +36,8 @@ body {
 }
 
 .nav li:hover {
-    height:175px;
-    width:200px;
+    height: 175px;
+    width: 200px;
 }
 
 .nav li a {
@@ -59,7 +59,7 @@ body {
 }
 
 .nav li a:hover {
-    background:#2fc5ff;
+    background: #2fc5ff;
 }
 
 .nav li a:first-child {
@@ -81,11 +81,11 @@ body {
 }
 
 .main-menu a:first-child::before {
-    background:url(home.png) center no-repeat;
+    background: url(home.png) center no-repeat;
 }
 
 .settings a:first-child::before {
-    background:url(settings.png) center no-repeat;
+    background: url(settings.png) center no-repeat;
 }
 
 .link a:first-child::before {
