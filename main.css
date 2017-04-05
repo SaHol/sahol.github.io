@@ -5,6 +5,9 @@ body {
 
 #wrapper {
 	-webkit-perspective: 500px;
+	-o-perspective: 500px;
+	-moz-perspective: 500px;
+	perspective: 500px;
 	width: 400px;
 	height: 200px;
 }
@@ -30,4 +33,7 @@ body {
 	/*-webkit-transform-origin: top left;*/
 	/*-webkit-transform: rotateZ(-40deg);*/
 	-webkit-transform: rotate3d(1,1,1,15deg);
+	-o-transform: rotate3d(1,1,1,15deg);
+	-moz-transform: rotate3d(1,1,1,15deg);
+	transform: rotate3d(1,1,1,15deg);
 }
