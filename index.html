@@ -1,20 +1,32 @@
-<!-- https://www.youtube.com/watch?v=OmlHKURlvhg&index=27&list=PLAKxGhxbBWw_jeD7pBLK8-V_ehxGgy11Z 
-Уроки по CSS/CSS3. Часть 17. Трансформации (transform)
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Часть 17. Трансформации (transform) </title>
+	<title>Часть 18</title>
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<div id="wrapper">
-		<!-- <div id="container">Hello CSS transforms</div> -->
-		<div id="container">
-			<iframe id="myframe" src="https://www.youtube.com/embed/Ggb60v9hgO4" frameborder="0" allowfullscreen></iframe>
-		</div>
+<div id="wrapper">
+	<div id="cube">
+		<div class="side" id="side1">1</div>
+		<div class="side" id="side2">2</div>
+		<div class="side" id="side3">3</div>
+		<div class="side" id="side4">4</div>
+		<div class="side" id="side5">5</div>
+		<div class="side" id="side6">6</div>
 	</div>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</div>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$(document).mousemove(function(e){
+			$('#cube').css({
+				'-webkit-transform':'rotateX('+e.pageY+'deg) rotateY('+e.pageX+'deg)'
+			})
+		})
+	})
+</script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>	
 </body>
 </html>
