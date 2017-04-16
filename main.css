@@ -1,53 +1,34 @@
 body {
-	background: url(http://subtlepatterns.com/patterns/light_noise_diagonal.png);
-	font: 1em 'PT Sans', Tahoma, Arial;
+	background: url(http://subtlepatterns.com/patterns/grid.png);
+	font: 1em Arial;
 }
 
-#wrapper {
-	-webkit-perspective: 900px;
-	margin: 80px;
+.square {
+	width: 90px;
+	height: 90px;
+	background: #333;
+	margin: 30px;
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+/*	animation-name: spin;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-delay: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+	animation-direction: alternate;*/
+	animation: spin 2s linear 1s infinite reverse;
 }
 
-#cube {
-	position: relative;
-	width: 300px;
-	height: 300px;
-	-webkit-transform-origin: 50% 50% -150px;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transform: rotate3d(1,1,1,160deg);
+
+.square:hover {
+	animation-play-state: paused;
 }
 
-.side {
-	width: 300px;
-	height: 300px;
-	background: rgba(0,0,0,.3);
-	background: -webkit-radial-gradient(rgba(0,0,0,.1),rgba(0,0,0,.5));
-	position: absolute;
-	border: 10px solid #fff;
-	border-radius: 10px;
-	font-size: 5em;
-	color: #fff;
-	line-height: 300px;
-	text-align: center;
-	text-shadow: 0 1px 3px rgba(0,0,0,.4);
-	box-shadow: 0 0 6px rgba(0,0,0,.5);
-	-webkit-transform-origin: 50% 50% -150px;
-	-webkit-backface-visibility: hidden;
-}
-
-#side2 {
-	-webkit-transform: rotateY(90deg);
-}
-
-#side3 {
-	-webkit-transform: rotateY(-90deg);
-}
-#side4 {
-	-webkit-transform: rotateX(90deg);
-}
-#side5 {
-	-webkit-transform: rotateX(-90deg);
-}
-#side6 {
-	-webkit-transform: rotateY(180deg);
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
