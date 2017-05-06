@@ -1,0 +1,25 @@
+body {
+    background: #ccc;
+    font-family: "PT Sons", Arial;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.con {
+    font-size: 1.3em;
+    font-style: italic;
+    text-decoration:underline;
+    text-transform:capitalize;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1em;
+    /*word-spacing: 50px;*/
+    /*letter-spacing: 3px;*/
+    text-shadow: 0 1px 0 #eee;
+}
+
+a {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+}
