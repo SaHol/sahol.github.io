@@ -8,25 +8,31 @@ Ctr-p - поиск файла в директории
 Ctr-Shift-p > set syntax - изменить синтаксис
 "draw_white_space": "all", - добавляет в настройки отображение невидимых символов
 Ctr-/ - за комментировать строчку
+Alt-Ctr-/ - многострочный комментарий
 Ctr-Shift-V - вставка с учётом отступов
+Ctr+D - выделить слово и добавить ещё такое слово
 
-Плагин HTML CSS JS Prettify - для форматирования я украшения кода Ctrl-Shift-H
+Плагин HTML CSS JS Prettify - для форматирования и украшения кода Ctr-Shift-H
 
 F9 - отсортировать свойства CSS по алфавиту
+cssComb - плагин сортирует css свойства по группам  Ctr-Shift-C
 
-cssComb - плагин сортирует css свойства по группам  Ctrl-Shift-C
+Ctr+D - выделяет слово и равные ему слова
+Alt-F3 - выделить все одинаковые слова
 
-Ctr-D - выделяет слово и равные ему слова
-Alt+F3 - выделить все одинаковые слова
-
-Ctr-курсор - добавляет курсор в нужные
+Ctr-курсор - (множественное выделение) добавляет курсор в нужные
 Shift-ПКмыши - выделение столбцом(вертикальное) файла
 Ctr+G Ctr+Shift+G - выделить слово и предыдущее слово
 Shift-Ctr-D - для дублирования строк
 
-Инструменты>Developer>New Snippet> - создаём сниппет
+Tools>Developer>New Snippet> - создаём сниппет
+Ctr-Q - записать и остановить запись макроса и можно сохранить
+
+https://www.youtube.com/watch?v=q7GRrf0cvpM
+Sublime Text Vintage Mode
 
 Ctr-Shift-P - открыть Package Control
+Install Package
 
 https://www.youtube.com/watch?v=mGPZ8P7xDLE
 Emmet - Обзор плагина;
@@ -64,7 +70,7 @@ link:favicon - полезная аббревиатура после нажать
 
 https://cdnjs.com - можно взять ссылку с сайта на jquery и вставить в настройки Опции>Emmet>Settings-User
 
-Ctrl-H - Найти и Заменить
+Ctr-H - Найти и Заменить
 
 !>.container>full>ul.nav>li*3>a 
 	full - это снипет из emmet
@@ -82,3 +88,4 @@ AutoFileName - быстрая прописка путей
 Alt - показать/скрыть меню
 для архивации при переустановки нужно сделать архив папки Packages
 
+commit
