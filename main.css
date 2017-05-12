@@ -5,9 +5,9 @@ body {
 }
 
 .container {
-	/*column-count: 3; количество колонок*/
+	column-count: 3; количество колонок
 	margin: 50px;
-	column-width: 200px;
+	/*column-width: 200px;*/
 	column-gap: 100px; /*растояние между колонками*/
 	column-rule: 2px /*solid*/ dashed rgba(0,0,0,.5);
 	/*height: 500px;*/
