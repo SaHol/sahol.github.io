@@ -1,14 +1,38 @@
-/*f++bgi*/
-body { 
-	font: 1em 'PT Sans', Arial,sans-serif;
-	background-image: url(https://subtleaptterns.com/patterns/gird.png);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body { /*16px - стандартный размер шрифта*/
+	font: 100%/1.5em Arial, Helvetica, sans-serif;
+	color: #000;
 }
 
 .container {
-	column-count: 3; количество колонок
-	margin: 50px;
-	/*column-width: 200px;*/
-	column-gap: 100px; /*растояние между колонками*/
-	column-rule: 2px /*solid*/ dashed rgba(0,0,0,.5);
-	/*height: 500px;*/
+	background: #e2e2e2;
+	width: 90%; /*960px - по умолчанию*/ 
+	margin: 0 auto;
+	display: table;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+section {
+	display: table-cell;
+/*	width: 65%;
+	float: left;*/
+}
+
+aside {
+	display: table-cell;
+/*	width: 30%;
+	float: right;*/
+	background: #d1d1d1;
+}
+
+footer {
+	display: table-row;
+	/*clear: both;*/
 }
