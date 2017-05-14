@@ -1,38 +1,61 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-body { /*16px - стандартный размер шрифта*/
-	font: 100%/1.5em Arial, Helvetica, sans-serif;
+body {
+	font: 100%/1.5em Arial,Helvetica, sans-serif;
 	color: #000;
+	/*background: gray;*/
 }
 
 .container {
-	background: #e2e2e2;
-	width: 90%; /*960px - по умолчанию*/ 
-	margin: 0 auto;
+	width: 90%;
+	margin: 1em auto;
+	background: #d2d2d2;
+}
+
+.container .cols {
+	float: left;
+	margin: 0 0 1em;
+	padding: 0 1em;
+	background: #fd4;
+	text-align: center;
+}
+
+.container .cols.col-1 { width: 8.333%; } 
+.container .cols.col-2 { width: 16.667%; } 
+.container .cols.col-3 { width: 25%; } 
+.container .cols.col-4 { width: 33.333%; } 
+.container .cols.col-5 { width: 41.667%; } 
+.container .cols.col-6 { width: 50%; } 
+.container .cols.col-7 { width: 58.333%; } 
+.container .cols.col-8 { width: 66.667%; } 
+.container .cols.col-9 { width: 75%; } 
+.container .cols.col-10 { width: 83.333%; } 
+.container .cols.col-11 { width: 91.667%; } 
+.container .cols.col-12 { width: 100%; }
+
+
+
+
+/*Чистилка строк
+===============================*/
+.container:before,
+.container:after,
+.row:before,
+.row:after,
+.clear:before,
+.clear:after {
+	content: " ";
 	display: table;
 }
 
-h2 {
-	font-size: 2em;
-}
-
-section {
-	display: table-cell;
-/*	width: 65%;
-	float: left;*/
-}
-
-aside {
-	display: table-cell;
-/*	width: 30%;
-	float: right;*/
-	background: #d1d1d1;
-}
-
-footer {
-	display: table-row;
-	/*clear: both;*/
+.content:after,
+.row:after,
+.clear:after {
+	clear: both;
 }
